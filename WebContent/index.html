@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="MainController" method="post">
+
+	Add Customer
+	<p>First name: <input type="text" name="firstName"></p>
+	<p>Last name: <input type="text" name="lastName"></p>
+	<p>E-mail: <input type="text" name="emailId"></p>
+	<button type="submit" name="action" value="add">Add</button>
+	<br></br>
+</form>
+
+<form action="MainController" method="post">
+	Delete Customer
+	<p>E-mail: <input type="text" name="emailId"></p>
+	<button type="submit" name="action" value="delete">Delete</button>
+	<br></br>
+</form>
+
+<form action="MainController" method="post">	
+	List of Customers
+	<input type="hidden" name="action" value="list"><br>
+	<button type="submit" name="action" value="list">List</button>
+</form>
+
+</body>
+</html>
